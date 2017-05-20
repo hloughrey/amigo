@@ -1,0 +1,14 @@
+version: "2"
+services:
+  db:
+    build: ./db/.
+    image: amigo-nodejs
+    ports:
+      - "9000:5432"
+  web:
+    build: ./api/.
+    image: amigo-db
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./api/amigo/:/var/www/amigo/api
