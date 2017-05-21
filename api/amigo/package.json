@@ -4,7 +4,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "clean": "rm -rf ./node_modules",
+    "start": "pm2 start -x $APP --name='amigo-api' --no-daemon",
+    "dev": "pm2 start -x $APP --name='amigo-api' --no-daemon --watch",
     "test": "mocha --recursive --timeout 10000"
   },
   "author": "",
