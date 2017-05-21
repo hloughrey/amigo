@@ -9,7 +9,7 @@ services:
     build: ./api/.
     image: amigo-db
     environment:
-      - NODE_ENV=TEST
+      - NODE_ENV=DEV
     links:
       - db
     ports:
