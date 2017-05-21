@@ -9,7 +9,7 @@ The orchestration of which is controlled by a docker-compose file.
 
 1. Select the *environment* you want to run and edit the `web.enironment` setting in the `docker-compose.yml` file to one of the settings below:
 | Environment   | Setting         | Description                                                 |
-| ------------- |:---------------:| :---------------------------------------------------------- |
+| ------------- |---------------  | ----------------------------------------------------------  |
 | Production    | `NODE_ENV=PROD` | Runs API using PM2 with watch flag disabled                 |
 | Development   | `NODE_ENV=DEV`  | Runs API using PM2 with watch flag enabled                  |
 | Testing       | `NODE_ENV=TEST` | Runs an automated test suite on the API using mocha & chai  |
